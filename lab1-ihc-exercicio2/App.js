@@ -24,7 +24,7 @@ export default function App() {
         }}
           />
           <Stack.Screen name="Tela 2" 
-          component={ProfileScreen}
+          component={TelaDeMensagem}
           options={{ title: 'Atividade 2', headerStyle: {
             backgroundColor: '#6200ee',
           },
@@ -55,7 +55,7 @@ const HomeScreen = ({ navigation }) => {
     </View>
   );
 };
-const ProfileScreen = ({ navigation, route }) => {
+const TelaDeMensagem = ({ navigation, route }) => {
   return <Text>{route.params.mensagem}</Text>;
 };
 
